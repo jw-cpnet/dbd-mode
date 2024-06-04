@@ -1,3 +1,19 @@
+;;; dbdiagram-mode.el --- dbdiagram.io erd definition mode -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2024 Jian Wang
+
+;; Author: Jian Wang <jian.wang@cpnet.io>
+;; URL: https://github.com/jw-cpnet/dbd-mode
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "29.3"))
+;; Keywords: languages
+
+;;; Commentary:
+
+;; This package provides a major mode for dbdiagram.io erd definition.
+
+;;; Code:
+
 (defconst dbdiagram-mode-syntax-table
   (let ((table (make-syntax-table)))
     ;; / is punctuation, but // is a comment starter
@@ -30,3 +46,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.dbd\\'" . dbdiagram-mode))
 (add-to-list 'auto-mode-alist '("\\.dbml\\'" . dbdiagram-mode))
+
+(provide 'dbdiagram-mode)
+
+;;; dbdiagram-mode.el ends here
