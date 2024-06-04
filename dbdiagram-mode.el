@@ -37,6 +37,7 @@
           (,x-fn-regexp . font-lock-function-name-face)
           (">" . font-lock-function-name-face))))
 
+;;;###autoload
 (define-derived-mode dbdiagram-mode python-mode
   "dbdiagram.io erd definition mode"
   :syntax-table dbdiagram-mode-syntax-table
@@ -44,6 +45,7 @@
   (setq-local python-indent 2)
   (font-lock-fontify-buffer))
 
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.dbd\\'" . dbdiagram-mode))
 (add-to-list 'auto-mode-alist '("\\.dbml\\'" . dbdiagram-mode))
 
