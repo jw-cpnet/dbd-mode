@@ -47,6 +47,8 @@
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.dbd\\'" . dbdiagram-mode))
+
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.dbml\\'" . dbdiagram-mode))
 
 (provide 'dbdiagram-mode)
